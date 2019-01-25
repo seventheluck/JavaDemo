@@ -1,4 +1,4 @@
-package multithread.producerConsumerModel;
+package multithread.producerConsumerModel.test1;
 
 public class SetThread implements Runnable {
     private Student s;

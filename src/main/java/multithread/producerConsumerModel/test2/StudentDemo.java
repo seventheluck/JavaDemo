@@ -1,4 +1,4 @@
-package multithread.producerConsumerModel;
+package multithread.producerConsumerModel.test2;
 
 /**
  * Entity: Student

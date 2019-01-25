@@ -8,12 +8,16 @@ public class ThreadJoinDemo {
         ThreadJoin tj3 = new ThreadJoin("Li3");
 
         tj1.start();
+        tj2.start();
         try {
-            tj1.join();
+            /*
+             * 1. When join() executed, current thread will run first.
+             * 2. Other threads start after this thread finished.
+             * */
+            tj2.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        tj2.start();
         tj3.start();
     }
 }
